@@ -39,6 +39,7 @@ data "template_file" "fwb_cloud_app_2" {
   }
 }
 resource "null_resource" "fwb_cloud_app_2" {
+  depends_on = [ null_resource.fwb_cloud_app_1 ]
   provisioner "local-exec" {
     command = data.template_file.fwb_cloud_app_2.rendered
   }
