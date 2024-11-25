@@ -18,7 +18,7 @@ locals {
   fgt_license_type = "byol"
   fortiflex_token  = var.fortiflex_token
 
-  fgt_build         = "build1575" // version 7.2.6
+  fgt_build         = "build2662" // version 7.2.6
   fgt_instance_type = "c6i.large"
 
   #--------------------------------------------------------------------------------------------------
